@@ -6,6 +6,7 @@ struct ListNode {
 			val(x), next(NULL) {
 	}
 };*/
+// 反转链表，需要注意的是NULL情况的处理
 class Solution {
 public:
     ListNode* ReverseList(ListNode* pHead) {

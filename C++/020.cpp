@@ -5,7 +5,7 @@ public:
         if(matrix.size() == 0) return res;
         int m = matrix.size(), n=matrix[0].size();
         int sm = 0, sn = 0;
-        // 模拟法
+        // 模拟法，设定4个边界
         while(m>sm && n>sn)
         {
             for(int i=sn;i<n;i++)

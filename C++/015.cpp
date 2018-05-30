@@ -6,6 +6,7 @@ struct ListNode {
 			val(x), next(NULL) {
 	}
 };*/
+// 双指针思想，注意异常情况
 class Solution {
 public:
     ListNode* FindKthToTail(ListNode* pListHead, unsigned int k) {

@@ -1,5 +1,6 @@
 class Solution {
 public:
+    // 快速幂运算
     double Power(double base, int exponent) {
         int flag = exponent<0?1:0;
         exponent = abs(exponent);

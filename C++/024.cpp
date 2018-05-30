@@ -1,5 +1,6 @@
 class Solution {
 public:
+    // 利用最后一个数把前面的数分割成两堆的特性
     bool recu(vector<int> &nums, int begin, int end)
     {
         int len = nums.size();

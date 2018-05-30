@@ -14,10 +14,11 @@ public:
         if(pre_ahead > pre_behind) return NULL;
         int v = pre[pre_ahead];
         TreeNode* root = new TreeNode(v);
-        // 找到中间点
+        // 找到中序遍历的根节点下标
         int m = vin_ahead;
         for(; vin[m]!=v; m++);
         int llen = m-vin_ahead;
+        // 递归构造
         // 构造左子树
         root->left = buildTree(pre, vin, pre_ahead+1, pre_ahead+llen, vin_ahead, m-1);
         // 构造右子树

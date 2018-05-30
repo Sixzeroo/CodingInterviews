@@ -9,6 +9,7 @@
 */
 class Solution {
 public:
+    // 使用栈或者动态数组反转实现，时间复杂度O(1)
     vector<int> printListFromTailToHead(ListNode* head) {
         vector<int> res;
         while(head != NULL)

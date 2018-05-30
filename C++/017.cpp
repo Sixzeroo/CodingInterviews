@@ -10,6 +10,7 @@ class Solution {
 public:
     ListNode* Merge(ListNode* pHead1, ListNode* pHead2)
     {
+        // 先构造头结点
         ListNode *pre = new ListNode(0);
         ListNode *p = pre;
         while(pHead1 != NULL && pHead2 != NULL)

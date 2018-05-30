@@ -1,5 +1,6 @@
 class Solution {
 public:
+    // 模拟栈操作
     bool IsPopOrder(vector<int> pushV,vector<int> popV) {
         stack<int> st;
         int len = pushV.size();

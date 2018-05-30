@@ -1,5 +1,6 @@
 class Solution {
 public:
+	// 采用直线查找的形式
     bool Find(int target, vector<vector<int> > array) {
         int m = array.size();
         if(m == 0) return false;
