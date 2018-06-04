@@ -16,8 +16,10 @@ public:
             res.push_back(num[deq.front()]);
             for(int i = size; i < num.size(); i++)
             {
+                // 删除在其前面比他们大的元素
                 while(!deq.empty() && num[i] >= num[deq.back()])
                     deq.pop_back();
+                // 对过期的数据进行删除
                 if(!deq.empty() && deq.front() <= i - size)
                     deq.pop_front();
                 deq.push_back(i);
